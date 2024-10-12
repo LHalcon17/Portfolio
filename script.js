@@ -1,7 +1,7 @@
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default anchor click behavior
+        e.preventDefault();
 
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
@@ -9,23 +9,14 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         if (targetElement) {
             targetElement.scrollIntoView({
                 behavior: 'smooth',
-                block: 'start' // Scroll to the top of the target section
+                block: 'start'
             });
         }
     });
 });
 
-// Alert when the profile image is clicked
+// Use profile image as the toggle for responsive navigation
 document.getElementById('nav-profile').addEventListener('click', function() {
-    alert('Profile image clicked!');
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('show');
 });
-
-// Responsive Navigation Toggle
-const navLinks = document.querySelector('nav ul');
-const navToggle = document.getElementById('nav-toggle');
-
-// Toggle navigation visibility on button click
-navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
- 
