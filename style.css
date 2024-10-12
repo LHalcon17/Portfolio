@@ -52,6 +52,16 @@ nav ul li a:hover {
     background-color: #555; /* Darker background on hover */
 }
 
+/* Responsive Toggle Button */
+#nav-toggle {
+    display: none; /* Hidden by default */
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
 /* Main Section Styles */
 main {
     max-width: 900px; /* Limit width for larger screens */
@@ -112,10 +122,21 @@ footer {
     nav ul {
         flex-direction: column; /* Stack navigation items vertically */
         align-items: flex-start; /* Align links to the left */
+        display: none; /* Hide links by default */
+        width: 100%; /* Full width */
+        margin-top: 10px; /* Space above the nav links */
+    }
+
+    nav ul.show {
+        display: flex; /* Show links when toggled */
     }
 
     nav ul li {
         margin: 5px 0; /* Space between nav items */
+    }
+
+    #nav-toggle {
+        display: block; /* Show the toggle button on small screens */
     }
 
     #nav-profile {
@@ -149,4 +170,3 @@ footer {
         padding: 10px; /* Further reduce padding for very small screens */
     }
 }
- 
