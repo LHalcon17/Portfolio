@@ -43,11 +43,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover transition */
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
     background-color: #005f51; /* Darker background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
 /* Add styles for the Menu button */
@@ -65,7 +67,7 @@ main {
     max-width: 800px; /* Limit width for readability */
     margin: 20px auto; /* Centering */
     padding: 20px;
-    background: white; /* White background for the main content */
+    background: e0f7f7; /* White background for the main content */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
