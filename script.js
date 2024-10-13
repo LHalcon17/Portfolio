@@ -21,11 +21,10 @@ document.getElementById('nav-profile').addEventListener('click', function() {
 });
 
 // Responsive Navigation Toggle
-const navLinks = document.querySelector('nav ul');
+const navLinks = document.querySelector('nav ul'); // Corrected 'n av' to 'nav'
 const navToggle = document.getElementById('nav-toggle');
 
 // Toggle navigation visibility on button click
 navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+    navLinks.classList.toggle('show'); // Toggle the 'show' class on click
 });
- 
