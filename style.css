@@ -8,12 +8,12 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: #f4f4f4; /* Light background for contrast */
+    background-color: #E3F2FD; /* Light background for contrast */
 }
 
 /* Header and Navigation Styles */
 header {
-    background-color: #333; /* Dark background for the header */
+    background-color: 00796B; /* Dark background for the header */
     padding: 20px;
 }
 
@@ -47,13 +47,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555; /* Darker background on hover */
+    background-color: #005f51; /* Darker background on hover */
 }
 
 /* Add styles for the Menu button */
 #nav-toggle {
     display: none; /* Hidden by default */
-    background-color: #333;
+    background-color: #00796B;
     color: white;
     border: none;
     padding: 10px;
@@ -105,7 +105,7 @@ p {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333; /* Dark background for footer */
+    background-color: #00796B; /* Dark background for footer */
     color: white; /* White text color */
     margin-top: 20px; /* Space above footer */
 }
@@ -122,7 +122,7 @@ footer {
         flex-direction: column; /* Stack navigation items vertically */
         align-items: flex-start; /* Align links to the left */
         width: 100%; /* Full width on small screens */
-        background-color: #333; /* Dark background */
+        background-color: #00796B; /* Dark background */
         padding: 10px;
     }
 
