@@ -50,6 +50,16 @@ nav ul li a:hover {
     background-color: #555; /* Darker background on hover */
 }
 
+/* Add styles for the Menu button */
+#nav-toggle {
+    display: none; /* Hidden by default */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
 /* Main Section Styles */
 main {
     max-width: 800px; /* Limit width for readability */
@@ -108,15 +118,28 @@ footer {
     }
 
     nav ul {
+        display: none; /* Hidden until toggled */
         flex-direction: column; /* Stack navigation items vertically */
         align-items: flex-start; /* Align links to the left */
+        width: 100%; /* Full width on small screens */
+        background-color: #333; /* Dark background */
+        padding: 10px;
+    }
+
+    nav ul.show {
+        display: flex; /* Show the links when .show class is added */
     }
 
     nav ul li {
-        margin: 5px 0; /* Space between nav items */
+        margin: 10px 0; /* Add spacing between nav items */
     }
 
     #nav-profile {
         margin-bottom: 10px; /* Space below profile picture */
+    }
+
+    /* Show the Menu button on smaller screens */
+    #nav-toggle {
+        display: block; /* Display the button on small screens */
     }
 }
